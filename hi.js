@@ -8,9 +8,9 @@ var Student = (function () {
     return Student;
 })();
 function greeter(person) {
-    return "Hello, " + person;
+    return "Hello, " + person.firstName + " " + person.lastName;
 }
-var user1 = { firstName: "Jane", lastName: "UJ" };
-var user2 = new Student("Jane", "UJ", "Test");
+var user1 = { firstName: "Jane", lastName: "UJ1" };
+var user2 = new Student("Jane", "UJ2", "Test");
 document.body.innerHTML = greeter(user1) + greeter(user2);
 //# sourceMappingURL=hi.js.map
